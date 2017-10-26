@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7b20568b5e92925dbd6551ceba21c87fc6460198" datatype="html">
+        <source>Welcome to <x id="INTERPOLATION" equiv-text="{{title}}"/>!</source>
+        <target>Bienvenue dans <x id="INTERPOLATION" equiv-text="{{title}}"/>!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\app.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fdf7cbdc140d0aab0f0b6c06065a0fd448ed6a2e" datatype="html">
+        <source>Title</source>
+        <target>Titre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\app.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="701174153757adf13e7c24a248c8a873ac9f5193" datatype="html">
+        <source>Angular logo</source>
+        <target>Logo Angular</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\app.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="54f29f9a6da150fc7c4fcd0b7e6d9a1b0314fd35" datatype="html">
+        <source>Here are some links to help you start: </source>
+        <target>Voici quelques liens pour vous aider à démarrer: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\app.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="917cdd202afdfa514bb37c2d7cc2eda44a799014" datatype="html">
+        <source>Plural ICU: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/> (value: <x id="INTERPOLATION" equiv-text="{{minutes}}"/>)</source>
+        <target>Plural ICU: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/> (value: <x id="INTERPOLATION" equiv-text="{{minutes}}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\app.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3d9013bcc5adc3098e972cbccbb8a90d0ce8bf8e" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {1 minute ago} other {<x id="INTERPOLATION" equiv-text="{{minutes}}"/> minutes ago} }</source>
+        <target>{VAR_PLURAL, plural, =0 {à l'instant} =1 {il y a 1 minute} other {il y a <x id="INTERPOLATION" equiv-text="{{minutes}}"/> minutes} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\app.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b233f90b631ed6e9e2eec22608ff4efc8683586b" datatype="html">
+        <source>Localized date: <x id="INTERPOLATION" equiv-text="{{date | date:&apos;full&apos;}}"/></source>
+        <target>Date localisée: <x id="INTERPOLATION" equiv-text="{{date | date:&apos;full&apos;}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\app.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

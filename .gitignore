@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+src/environments/jit-locale-data.ts
 
 # dependencies
 /node_modules
