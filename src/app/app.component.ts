@@ -23,7 +23,7 @@ import {Component, Inject, LOCALE_ID, Renderer2} from '@angular/core';
     </ul>
 
     <p>
-        <button (click)="inc(1)">+</button> <button (click)="inc(-1)">-</button>
+        <button (click)="inc(-1)">-</button> <button (click)="inc(1)">+</button>
         <span i18n>Plural ICU: {minutes, plural, =0 {just now} =1 {1 minute ago} other {{{minutes}} minutes ago}} (value: {{minutes}})</span>
     </p>
 
@@ -38,6 +38,7 @@ export class AppComponent {
 
 
   constructor(@Inject(DOCUMENT) doc: Document, @Inject(LOCALE_ID) locale: string, renderer: Renderer2) {
+    console.log(`Using locale: ${locale}`);
     // set the "lang" attribute on the "<html>" element
     renderer.setAttribute(doc.documentElement, 'lang', locale);
   }

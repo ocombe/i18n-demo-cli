@@ -1,4 +1,7 @@
-import {StaticProvider, TRANSLATIONS, TRANSLATIONS_FORMAT} from "@angular/core";
+import {
+  CompilerOptions, MissingTranslationStrategy, TRANSLATIONS,
+  TRANSLATIONS_FORMAT
+} from "@angular/core";
 import {environment} from "./environments/environment";
 
 declare const require;
@@ -12,7 +15,7 @@ interface EnvJitConfig {
   }
 }
 
-export function getTranslationProviders(env: EnvJitConfig | any): { providers: StaticProvider[] } {
+export function getTranslationProviders(env: EnvJitConfig | any): CompilerOptions {
   const PROVIDERS = [];
 
   // Providers are automatically setup by the AngularCompilerPlugin for AOT
@@ -28,7 +31,7 @@ export function getTranslationProviders(env: EnvJitConfig | any): { providers: S
     }
   }
 
-  return {providers: PROVIDERS};
+  return {providers: PROVIDERS, missingTranslation: MissingTranslationStrategy.Error};
 }
 
 export function getLocale(env: EnvJitConfig | any): string {
