@@ -2,7 +2,6 @@ import {
   CompilerOptions, MissingTranslationStrategy, TRANSLATIONS,
   TRANSLATIONS_FORMAT
 } from "@angular/core";
-import {environment} from "./environments/environment";
 
 declare const require;
 
@@ -36,7 +35,7 @@ export function getTranslationProviders(env: EnvJitConfig | any): CompilerOption
 
 export function getLocale(env: EnvJitConfig | any): string {
   if(env.LOCALE_DATA && env.LOCALE_DATA.locale) {
-    return environment.LOCALE_DATA.locale;
+    return env.LOCALE_DATA.locale;
   }
 
   return 'en-US';
